@@ -1,0 +1,32 @@
+<!-- 25. Escreva uma função que exiba os n primeiros números da sequência de Fibonacci -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    
+    <script>
+
+        function fibonacci(n) {
+            var a = 0
+            var b = 1
+
+            for (var i = 0; i < n; i++) {
+                console.log(a)
+                var proximo = a + b
+                a = b
+                b = proximo
+            }
+        }
+
+        var n = parseInt(prompt("Digite quantos números da sequência de Fibonacci você quer ver:"))
+        fibonacci(n)
+
+    </script>
+
+</body>
+</html>
