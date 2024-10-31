@@ -1,0 +1,28 @@
+<!-- 35. Crie uma função que receba dois arrays e retorne a união deles -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 35</title>
+</head>
+<body>
+    
+    <script>
+
+        function unirArrays(array1, array2) {
+            return array1.concat(array2)
+        }
+
+        var arrayA = [1, 2, 3]
+        var arrayB = [3, 4, 5]
+        var arrayUnido = unirArrays(arrayA, arrayB)
+        console.log(arrayUnido)
+
+    </script>
+
+</body>
+</html>
+
+<!-- Explicação: Descobri o concat() por meio do site https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/concat -->

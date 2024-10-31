@@ -1,0 +1,27 @@
+<!-- 36. Encontre o índice de um valor específico em um array -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 36</title>
+</head>
+<body>
+    
+    <script>
+
+        function encontrarIndice(array, valor) {
+            return array.indexOf(valor)
+        }
+
+        var meuArray = [1, 2, 3, 4, 5]
+        var indice = encontrarIndice(meuArray, 3)
+        console.log(indice)
+
+    </script>
+
+</body>
+</html>
+
+<!-- Explicação: Descobri o indexOf() por meio do site https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf -->
