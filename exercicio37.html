@@ -1,0 +1,37 @@
+<!-- 37. Crie uma função que retorne o segundo maior número de um array -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 37</title>
+</head>
+<body>
+    
+    <script>
+
+        function maior2(array) {
+            var maior = 0
+            var maior2 = 0
+
+            for (var i = 0; i < array.length; i++){
+                var num = array[i]
+                if(num > maior){
+                    maior2 = maior
+                    maior = num
+                }
+                else if (num > maior2 && num < maior){
+                    maior2 = num
+                }
+            }
+            return maior2
+        }
+
+        var numeros = [9, 10, 11]
+        console.log(maior2(numeros))
+
+    </script>
+
+</body>
+</html>
