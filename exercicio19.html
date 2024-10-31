@@ -1,0 +1,28 @@
+<!-- 19. Dada uma senha, verifique se ela tem pelo menos 8 caracteres -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19</title>
+</head>
+<body>
+    
+    <script>
+
+        function verificaSenha(senha) {
+            if (senha.length >= 8) {
+                console.log("A senha é válida")
+            } else {
+                console.log("A senha é curta demais")
+            }
+        }
+
+        var senha = prompt("Digite sua senha:")
+        verificaSenha(senha)
+
+    </script>
+
+</body>
+</html>

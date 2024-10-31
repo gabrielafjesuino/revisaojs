@@ -1,0 +1,32 @@
+<!-- 12. Dada a idade de uma pessoa, exiba se ela é criança, adolescente, adulto ou idoso -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+</head>
+<body>
+    
+    <script>
+
+        var idade = parseInt(prompt("Digite a idade:"), 10)
+
+        if (idade >= 0 && idade <= 12) {
+            console.log("Criança")
+        } else if (idade >= 13 && idade <= 17) {
+            console.log("Adolescente")
+        } else if (idade >= 18 && idade <= 59) {
+            console.log("Adulto")
+        } else {
+            console.log("Idoso")
+        }
+
+    </script>
+
+</body>
+</html>
+
+<!-- Explicação: , 10 garante que o número seja sempre tratado como decimal. 
+Isso ajuda a evitar confusões, especialmente quando há zeros à esquerda. -->

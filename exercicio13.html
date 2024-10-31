@@ -1,0 +1,32 @@
+<!-- 13. Verifique se uma letra é uma vogal ou uma consoante -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    
+    <script>
+
+        function verificarLetra(letra) {
+            var vogais = ['a', 'e', 'i', 'o', 'u']
+
+            if (vogais.includes(letra)) {
+                console.log("Vogal")
+            } else {
+                console.log("Consoante")
+            }
+        }
+
+        var letra = prompt("Digite uma letra:")
+        verificarLetra(letra)
+
+    </script>
+
+</body>
+</html>
+
+<!-- Explicação: Descobri o includes() por meio do site https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes -->

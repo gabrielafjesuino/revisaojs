@@ -1,0 +1,30 @@
+<!-- 15. Verifique se uma string contém a palavra "JavaScript" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 15</title>
+</head>
+<body>
+    
+    <script>
+
+        function contemJavaScript(texto) {
+            if (texto.includes("JavaScript")) {
+                console.log("A string contém a palavra 'JavaScript'")
+            } else {
+                console.log("A string não contém a palavra 'JavaScript'")
+            }
+        }
+
+        var texto = prompt("Informe uma string:")
+        contemJavaScript(texto)
+
+    </script>
+
+</body>
+</html>
+
+<!-- Explicação: Descobri o includes() por meio do site https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes -->
