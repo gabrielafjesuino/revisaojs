@@ -1,0 +1,28 @@
+<!-- 27. Dada uma array de números, exiba apenas os números pares -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 27</title>
+</head>
+<body>
+    
+    <script>
+        
+        function exibirNumerosPares(array) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] % 2 === 0) {
+                    console.log(array[i])
+                }
+            }
+        }
+
+        var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        exibirNumerosPares(numeros)
+
+    </script>
+
+</body>
+</html>
