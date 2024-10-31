@@ -1,0 +1,35 @@
+<!-- 8. Crie um código para verificar se um número é positivo, negativo ou zero -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    
+    <script>
+       
+       function verificarNumero(numero) {
+            var numeroInteiro = parseInt(numero, 10)
+            
+            if (numeroInteiro > 0) {
+                console.log("Positivo")
+            } else if (numeroInteiro < 0) {
+                console.log("Negativo")
+            } else {
+                console.log("Zero")
+            }
+        }
+
+        var numero = prompt("Digite um número:")
+        verificarNumero(numero)
+
+    </script>
+
+</body>
+</html>
+
+<!-- Explicação: , 10 garante que o número seja sempre tratado como decimal. 
+Isso ajuda a evitar confusões, especialmente quando há zeros à esquerda. -->
